@@ -1,0 +1,45 @@
+{
+    "settings": {
+        "react": {
+            "createClass": "createReactClass",
+            // Regex for Component Factory to use,
+            // default to "createReactClass"
+            "pragma": "React",
+            // Pragma to use, default to "React"
+            "version": "16.6.0-alpha.8af6728"
+            // React version, default to the latest React stable release
+            //      "flowVersion": "0.53"
+            //      // Flow version
+        }
+    },
+    "parser": "babel-eslint",
+    "env": {
+        "browser": true
+    },
+    "plugins": [
+        "react"
+    ],
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended"
+    ],
+    "rules": {
+        // overrides
+        "no-unused-vars": "warn",
+        "no-console": "warn",
+        "quotes": [
+            "warn",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ]
+    }
+}
+
+
+/*
+
+run  ./node_modules/.bin/eslint ./src
+*/
